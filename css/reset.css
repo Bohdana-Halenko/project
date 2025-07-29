@@ -17,6 +17,7 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block
 }
 
 img {
@@ -41,4 +42,14 @@ strong, b {
 
 em, i {
   font-style: italic;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+}
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
