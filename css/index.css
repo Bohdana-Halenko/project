@@ -66,19 +66,22 @@ body {
 }
 .hero-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .hero-item {
   background-color: var(--game-card);
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   box-shadow: var(--header-shadow);
   transition: transform 0.2s;
-  display: flex;
-  gap: 50px;
+  width: 48%;
 }
-
+.hero-item-wrapper{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
 .hero-img {
   width: 100px;
   height: 100px;
@@ -117,8 +120,22 @@ body {
 }
 
 .hero-item-box {
-  margin-left: auto;
-  text-align: center;
+  display: flex;
+justify-content: space-between;
+align-items: end;
+}
+.hero-item-top{
+  display: flex;
+  align-items: center;
+}
+.star-top{
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.star-icon{
+  width: 20px;
+  height: 20px;
 }
 .hero-item-name {
   margin-top: 10px;
@@ -427,7 +444,14 @@ body {
   width: 20px;
   height: 20px;
 }
-
+.where-aspect-img{
+  width: 500px;
+}
+.where-aspect{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
 /* Risks */
 .risks-cards {
   display: flex;
@@ -460,4 +484,210 @@ body {
 .risks-img{
   width: 20px;
   height: 20px;
+}
+
+/* Differens */
+.differens-subtitle{
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.differens-icon{
+  width: 20px;
+  height: 20px;
+}
+.differens-item{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Bonus */
+.bonus-icon{
+  width: 20px;
+  height: 20px;
+}
+.bonus-item{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bonus-subtitle{
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* Strategia */
+.strategia-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 40px;
+}
+.strategia-card {
+  background-color: var(--game-card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 48%;
+}
+.strategia-icon{
+  width: 20px;
+  height: 20px;
+}
+.strategia-item{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Mobile */
+.mobile-box{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.mobile-photo{
+  width: 450px;
+  height: 400px;
+  margin-top: 60px;
+}
+.mobile-icon{
+  width: 30px;
+  height: 30px;
+}
+.mobile-item{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+.mobile-subtitle{
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.mobile-list{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-card {
+  background-color: var(--game-card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.mobile-word{
+  font-weight: 700;
+  color: var(--background-link);
+}
+.mobile-list-el{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.mobile-card-el{
+  background-color: var(--game-card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mobile-card-item{
+  display: flex;
+  gap: 15px;
+}
+
+/* Security */
+.security-title{
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-shadow: var(--text-shadow);
+}
+
+.security-item{
+display: flex;
+gap: 15px;
+margin-bottom: 20px;
+}
+.security-img{
+  width: 20px;
+  height: 20px;
+}
+.security-word{
+  font-weight: 700;
+}
+
+/* .reviews-list {
+  /* position: relative; */
+  /* height: 80px; */
+/* }  */
+
+.review {
+  height: 180px;
+  display: none;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  background-color: var(--game-card);
+    padding: 25px 50px;
+    border-radius: 12px;
+    box-shadow: var(--header-shadow);
+    transition: transform 0.2s;
+}
+.reviews-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+  font-family: sans-serif;
+}
+.review-name{
+  color: var(--background-link);
+  margin-bottom: 20px;
+}
+.review-text{
+  line-height: 170%;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.review.active {
+  display: block;
+  opacity: 1;
+}
+
+.dots {
+  margin-top: 40px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: var(--item-inf);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--background-link);
 }
