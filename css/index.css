@@ -105,7 +105,7 @@ body {
 }
 .hero-item {
   background-color: var(--game-card);
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   box-shadow: var(--header-shadow);
   transition: transform 0.2s;
@@ -113,12 +113,12 @@ body {
 }
 .hero-item-wrapper {
   display: flex;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 10px;
 }
 .hero-img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 8px;
 }
 .hero-item-title {
@@ -153,8 +153,9 @@ body {
 }
 .hero-item-box {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 .hero-item-top {
   display: flex;
@@ -276,21 +277,24 @@ body {
     transform: rotate(0deg);
   }
 }
-
+/* -------------------------------------About---------------------------------- */
 .about-list {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .about-item {
   display: flex;
-  gap: 15px;
+  /* gap: 15px; */
   margin-bottom: 15px;
 }
 .about-span {
   font-weight: 700;
 }
+.about-item-text{
+  line-height: 160%;
+}
 
-/* Plan */
+/* --------------------------------------------Plan-----------------------------------*/
 
 .plan-text {
   margin-bottom: 20px;
@@ -430,8 +434,8 @@ body {
   height: 320px;
 }
 .where-subtitle {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .where-item {
   display: flex;
@@ -449,7 +453,7 @@ body {
 .where-aspect {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 /* ----------------------------------------------------Risks-------------------------------- */
 .risks-cards {
@@ -554,8 +558,8 @@ body {
   width: 100%;
 }
 .mobile-icon {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
 }
 .mobile-item {
   display: flex;
@@ -575,7 +579,7 @@ body {
 }
 .mobile-card {
   background-color: var(--game-card);
-  padding: 30px;
+  padding: 10px;
   border-radius: 12px;
   box-shadow: var(--header-shadow);
   transition: transform 0.2s;
@@ -583,6 +587,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  font-size: 12px;
 }
 .mobile-word {
   font-weight: 700;
@@ -590,29 +595,34 @@ body {
 }
 .mobile-list-el {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
 }
 .mobile-card-el {
   background-color: var(--game-card);
-  padding: 30px;
+  padding: 10px;
   border-radius: 12px;
   box-shadow: var(--header-shadow);
   transition: transform 0.2s;
-  width: 48%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 12px;
 }
 .mobile-card-item {
   display: flex;
   gap: 15px;
 }
+.icon{
+  display: none;
+}
 
-/* Security */
+/* ---------------------------------------Security ------------------------------------*/
 .security-title {
-  font-size: 40px;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 30px;
   text-shadow: var(--text-shadow);
 }
 
@@ -628,41 +638,36 @@ body {
 .security-word {
   font-weight: 700;
 }
-
-/* .reviews-list {
-  /* position: relative; */
-/* height: 80px; */
-/* }  */
-
+.security-text{
+  line-height: 160%;
+}
+/* ---------------------------------------review------------------------------- */
 .review {
-  height: 180px;
+  height: 170px;
   display: none;
   font-size: 1.1rem;
   opacity: 0;
   transition: opacity 0.5s ease;
-
   background-color: var(--game-card);
-  padding: 25px 50px;
-  border-radius: 12px;
+  padding: 12px;
+  border-radius: 15px;
   box-shadow: var(--header-shadow);
   transition: transform 0.2s;
 }
 .reviews-slider {
-  max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
-  padding: 30px;
   font-family: sans-serif;
 }
 .review-name {
   color: var(--background-link);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 .review-text {
   line-height: 170%;
   font-style: italic;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 .review.active {
@@ -671,7 +676,7 @@ body {
 }
 
 .dots {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .dot {
@@ -693,11 +698,61 @@ body {
 
 
 /* -------------------------------------------------------------------480------------------------------------------------------------ */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 480px){
   body {
   font-size: 16px;
 }
+.hero-img{
+  width: 90px;
+  height: 90px;
 }
+.hero-item-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.hero-item {
+  background-color: var(--game-card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 100%;
+}
+.hero-item-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+}
+
+
+/* --------------------------------------------------------------------768--------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .header-list {
+    display: flex;
+    gap: 40px;
+  }
+    .header{
+    padding: 30px 0;
+  }
+
+  .header-logo {
+    width: 150px;
+    height: 60px;
+  }
+  .header-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
 
 /* --------------------------------------------------------------------laptop--------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
@@ -713,21 +768,7 @@ body {
   padding: 20px 0;
 }
 
-  .header{
-    padding: 30px 0;
-  }
-  .header-list {
-    display: flex;
-    gap: 40px;
-  }
-  .header-logo {
-    width: 150px;
-    height: 60px;
-  }
-  .header-btn {
-    padding: 10px 20px;
-    font-size: 20px;
-  }
+
 
   /* Hero */
   .hero-title {
@@ -735,6 +776,7 @@ body {
     margin-bottom: 30px;
   }
   .hero-list {
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
   }
@@ -742,6 +784,10 @@ body {
     padding: 25px;
     width: 48%;
   }
+  .hero-img {
+  width: 100px;
+  height: 100px;
+}
   .hero-item-title {
     font-size: 20px;
   }
@@ -805,6 +851,11 @@ body {
 .popular-icon {
   width: 50px;
 }
+
+/* about */
+.about-item {
+  gap: 15px;
+}
 /* where */
 .where-wrap {
   display: flex;
@@ -814,9 +865,17 @@ body {
   display: block;
   width: 500px;
 }
+.where-subtitle {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.where-aspect {
+  margin-bottom: 80px;
+}
 /* riscks */
 .risks-cards {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 50px;
 }
@@ -828,7 +887,7 @@ body {
 .strategia-list {
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 50px;
+  /* gap: 50px; */
 }
 .strategia-card {
   background-color: var(--game-card);
@@ -841,6 +900,7 @@ body {
 /* mobile */
 .mobile-box {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 50px;
 }
@@ -855,4 +915,113 @@ body {
 .mobile-subtitle {
   font-size: 30px;
 }
+.mobile-card {
+  background-color: var(--game-card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
 }
+.icon{
+  display: block;
+  margin-right: 10px;
+}
+.mobile-list-el {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.mobile-card-el {
+  background-color: var(--game-card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.mobile-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* security */
+.security-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-shadow: var(--text-shadow);
+}
+/* reviews */
+.review {
+  height: 180px;
+  display: none;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: var(--game-card);
+  padding: 25px 50px;
+  border-radius: 12px;
+  box-shadow: var(--header-shadow);
+  transition: transform 0.2s;
+}
+.reviews-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+  font-family: sans-serif;
+}
+.review-name {
+  margin-bottom: 20px;
+}
+.review-text {
+  font-size: 16px;
+}
+.review {
+  height: 180px;
+  padding: 25px 50px;
+}
+.dots {
+  margin-top: 40px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
