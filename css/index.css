@@ -808,7 +808,7 @@ body {
   font-weight: 400;
   font-size: 10px;
   text-align: center;
-  color: var(--background-link);
+  color: var(--text-color);
 }
 .footer-wrap {
   display: flex;
