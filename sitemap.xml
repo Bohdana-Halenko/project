@@ -14,9 +14,9 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
+</urlset>
   <!-- Основні розділи (якщо є) -->
-  <url>
+  <!-- <url>
     <loc>https://project-vert-chi.vercel.app/app</loc>
     <lastmod>2025-08-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -84,7 +84,6 @@
     <loc>https://project-vert-chi.vercel.app/terms</loc>
     <lastmod>2025-08-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+    <priority>0.3</priority> -->
+  <!-- </url> -->
 
-</urlset>

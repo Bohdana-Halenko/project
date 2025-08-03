@@ -61,6 +61,8 @@ window.addEventListener("click", function (e) {
 
 
 
+
+
 // Slider
 const reviews = document.querySelectorAll(".review");
 const dots = document.querySelectorAll(".dot");
