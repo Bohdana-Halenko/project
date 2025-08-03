@@ -1,9 +1,7 @@
 {
   
   "headers": [
-    {"$schema": "https://openapi.vercel.sh/vercel.json",
-  "source": "/feedback/:type",
-  "destination": "/api/feedback/:id"},
+    
     {
       "source": "/sitemap.xml",
       "headers": [
@@ -19,15 +17,6 @@
         {
           "key": "Content-Type",
           "value": "text/plain"
-        }
-      ]
-    },
-    {
-      "source": "/.*\\.(webp|png|jpg|jpeg|svg|gif)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
