@@ -781,8 +781,8 @@ body {
 
 .close {
   position: absolute;
-  top: 10px;
-  right: -35px;
+  top: -25px;
+  right: 0px;
   font-size: 30px;
   color: white;
   cursor: pointer;
@@ -989,6 +989,15 @@ background-color: var(--background-link);
   .header-link{
     font-size: 20px;
   }
+  .close {
+  position: absolute;
+  top: 10px;
+  right: -35px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
 }
 
 /* --------------------------------------------------------------------laptop--------------------------------------------------------------- */
