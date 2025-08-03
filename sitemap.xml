@@ -1,4 +1,4 @@
-<!-- Заменяем example.com на  реальный домен при загрузке на хостинг (например, https://penaltyshootout-bet.com/sitemap.xml). -->
+
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +7,6 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Головна сторінка -->
   <url>
     <loc>https://project-vert-chi.vercel.app/</loc>
     <lastmod>2025-08-03</lastmod>

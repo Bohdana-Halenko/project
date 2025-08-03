@@ -36,7 +36,9 @@
           </label>
 
           <ul class="header-list">
-            <li class="header-item"><a class="header-link" href="../pages/app.html">App</a></li>
+            <li class="header-item">
+              <a class="header-link" href="../pages/app.html">App</a>
+            </li>
             <li class="header-item">
               <a class="header-link" href="../pages/demo.html">Demo</a>
             </li>
@@ -59,7 +61,7 @@
         </nav>
       </div>
     </header>
-     <main>
+    <main>
       <section class="demo">
         <div class="container">
           <h1 class="title">Prueba la versión demo de Plinko</h1>
@@ -76,12 +78,28 @@
                 </iframe>
               </div>
             </div>
-            <a href="https://1wfzws.life/?p=ayxs&sub1=1" class="demo-app-link" target="_blank"
+            <a
+              href="https://1wfzws.life/?p=ayxs&sub1=1"
+              class="demo-app-link"
+              target="_blank"
               >Jugar casino</a
             >
           </div>
-          <p class="text">La versión demo de Plinko es sin duda una gran oportunidad para probar el juego y familiarizarse con sus configuraciones y mecánicas. Sin embargo, los jugadores experimentados la usan con fines ligeramente diferentes.</p>
-          <p class="text">Por ejemplo, los jugadores suelen acceder al modo gratuito de Plinko para probar una estrategia específica, eliminando cualquier riesgo. Además, la configuración de la tragamonedas en el modo demo es la misma que la de jugar con dinero real, por lo que, tras unas cuantas docenas de giros, es fácil comprender el rendimiento real de la máquina. Prueba la demo de Plinko ahora y evalúa todas las características del juego sin ningún riesgo.</p>
+          <p class="text">
+            La versión demo de Plinko es sin duda una gran oportunidad para
+            probar el juego y familiarizarse con sus configuraciones y
+            mecánicas. Sin embargo, los jugadores experimentados la usan con
+            fines ligeramente diferentes.
+          </p>
+          <p class="text">
+            Por ejemplo, los jugadores suelen acceder al modo gratuito de Plinko
+            para probar una estrategia específica, eliminando cualquier riesgo.
+            Además, la configuración de la tragamonedas en el modo demo es la
+            misma que la de jugar con dinero real, por lo que, tras unas cuantas
+            docenas de giros, es fácil comprender el rendimiento real de la
+            máquina. Prueba la demo de Plinko ahora y evalúa todas las
+            características del juego sin ningún riesgo.
+          </p>
         </div>
       </section>
     </main>
@@ -98,7 +116,9 @@
         <ul class="footer-list">
           <li class="footer-item">
             <img src="" alt="" />
-            <a href="../pages/politica-de-privacidad.html" class="footer-link">Política de Privacidad</a>
+            <a href="../pages/politica-de-privacidad.html" class="footer-link"
+              >Política de Privacidad</a
+            >
           </li>
           <li class="footer-item">
             <a href="#" class="footer-link">Acerca de Nosotros</a>
@@ -125,6 +145,35 @@
       </div>
     </footer>
 
-    <script src="../js/index.js"></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const openBtn = document.getElementById("open-demo");
+        const modal = document.getElementById("demoModal");
+        const closeBtn = modal.querySelector(".close");
+
+        const iframeSrc =
+          "https://demo.bgaming-network.com/games/Plinko/FUN?play_token=6d2447d4-5ed7-40f8-973d-5e8ab6890cc4";
+        const iframe = modal.querySelector("iframe");
+
+        openBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          iframe.src = iframeSrc;
+          modal.style.display = "flex";
+        });
+
+        function closeModal() {
+          modal.style.display = "none";
+          iframe.src = "";
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+
+        window.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
