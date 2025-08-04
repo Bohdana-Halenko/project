@@ -926,16 +926,16 @@ body {
 }
 
 /* --------------------------------------------------Sitemap------------------------------------------------------ */
-.list{
+.list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.item{
+.item {
   display: flex;
   gap: 15px;
 }
-.sitemap-link{
+.sitemap-link {
   color: var(--text-color);
   transition: color 0.3s ease;
 }
@@ -945,37 +945,16 @@ body {
 }
 
 /* --------------------------------------------Responsable------------------------------------------------ */
-.subtitle{
+.subtitle {
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 18px;
 }
-.res-link{
+.res-link {
   text-decoration: underline;
   font-weight: 600;
   color: var(--background-link);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------------------------------------------------------480------------------------------------------------------------ */
 @media screen and (min-width: 480px) {
@@ -1115,7 +1094,7 @@ body {
   .politica-title {
     font-size: 20px;
   }
-    .mobile-box {
+  .mobile-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1127,9 +1106,9 @@ body {
     margin-top: auto;
     margin-bottom: auto;
   }
-  .subtitle{
-  font-size: 22px;
-}
+  .subtitle {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -1404,10 +1383,10 @@ body {
   .politica-title {
     font-size: 26px;
   }
-    .subtitle{
-  font-size: 26px;
-  margin-top: 50px;
-}
+  .subtitle {
+    font-size: 26px;
+    margin-top: 50px;
+  }
 }
 
 /* --------------------------------------------------------------Mobile menu -----------------------------------------------*/
