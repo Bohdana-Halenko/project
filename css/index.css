@@ -395,10 +395,11 @@ body {
   line-height: 170%;
 }
 .popular-icons {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 20px; */
+  display: none;
 }
 .popular-icon {
   width: 20px;
