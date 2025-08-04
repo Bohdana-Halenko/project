@@ -61,11 +61,6 @@ img {
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  line-height: 160%;
-}
 section {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -98,6 +93,8 @@ body {
   background-color: var(--body-color);
   color: var(--main-text-color);
   font-size: 14px;
+  margin: 0;
+  line-height: 160%;
 }
 .title {
   font-size: 24px;
