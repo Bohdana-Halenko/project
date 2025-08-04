@@ -1061,6 +1061,18 @@ body {
   .politica-title {
     font-size: 20px;
   }
+    .mobile-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .mobile-photo {
+    width: 450px;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -1214,18 +1226,7 @@ body {
     width: 48%;
   }
   /* mobile */
-  .mobile-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  .mobile-photo {
-    width: 450px;
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+
   .mobile-list {
     gap: 40px;
   }
