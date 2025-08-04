@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://project-vert-chi.vercel.app/sitemap.xml
+Sitemap: https://project-vert-chi.vercel.app/
 

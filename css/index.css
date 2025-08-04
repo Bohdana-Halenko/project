@@ -950,6 +950,11 @@ body {
   margin-bottom: 20px;
   font-size: 18px;
 }
+.res-link{
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--background-link);
+}
 
 
 
@@ -1401,6 +1406,7 @@ body {
   }
     .subtitle{
   font-size: 26px;
+  margin-top: 50px;
 }
 }
 
