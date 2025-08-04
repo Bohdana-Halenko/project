@@ -395,11 +395,10 @@ body {
   line-height: 170%;
 }
 .popular-icons {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px; */
-  display: none;
+  margin-top: 20px;
 }
 .popular-icon {
   width: 20px;
@@ -1173,7 +1172,7 @@ background-color: var(--background-link);
 
   /* popular */
   .popular-icon {
-    width: 50px;
+    width: 20px;
   }
 
   /* about */
