@@ -880,7 +880,7 @@ body {
 /* -----------------------------------------------------------------Demo------------------------------------------ */
 .demo-box {
   width: 100%;
-  background-image: url(../img/bg.webp);
+  background-image: url('../img/bg.webp');
   background-position: center;
   background-size: cover;
   border-radius: 30px;
