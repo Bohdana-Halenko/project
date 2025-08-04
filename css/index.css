@@ -423,7 +423,6 @@ body {
 }
 .about-item {
   display: flex;
-  /* gap: 15px; */
   margin-bottom: 15px;
 }
 .about-span {
@@ -736,7 +735,7 @@ body {
 .faq-item {
   box-shadow: var(--faq-shadow);
   padding: 20px;
-  background-color: var(----faq-background);
+  background-color: var(--faq-background);
   border-radius: 20px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
